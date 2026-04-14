@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UrbanWear</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: black;
+            color: white;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: gold;
+        }
+
+        /* HERO */
+        .hero {
+            height: 90vh;
+            background: url('https://source.unsplash.com/1600x900/?fashion') no-repeat center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+        }
+
+        .btn {
+            background: gold;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            margin-top: 10px;
+            width: fit-content;
+        }
+
+        /* PRODUCTS */
+        .products {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            transition: 0.3s;
+            background: white;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <h1>UrbanWear</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+    </nav>
+</header>
+
+<!-- HOME SECTION -->
+<section id="home" class="hero">
+    <h2>New Collection 2026</h2>
+    <p>Style that defines you</p>
+    <a href="#shop" class="btn">Shop Now</a>
+</section>
+
+<section class="products">
+    <h2>Featured Items</h2>
+
+    <div class="product-grid">
+        <div class="card">
+            <img src="https://source.unsplash.com/300x300/?hoodie" alt="">
+            <h3>Stylish Hoodie</h3>
+            <p>$40</p>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x300/?tshirt" alt="">
+            <h3>Classic T-Shirt</h3>
+            <p>$25</p>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x300/?jacket" alt="">
+            <h3>Winter Jacket</h3>
+            <p>$60</p>
+        </div>
+    </div>
+</section>
+
+<!-- SHOP SECTION -->
+<section id="shop" class="products">
+    <h2>Shop Collection</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x300/?jeans" alt="">
+            <h3>Denim Jeans</h3>
+            <p>$50</p>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x300/?sneakers" alt="">
+            <h3>Sneakers</h3>
+            <p>$70</p>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x300/?shirt" alt="">
+            <h3>Formal Shirt</h3>
+            <p>$35</p>
+        </div>
+
+        <div class="card">
+            <img src="https://source.unsplash.com/300x300/?fashion" alt="">
+            <h3>Streetwear Set</h3>
+            <p>$90</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 UrbanWear</p>
+</footer>
+
+</body>
+</html>
